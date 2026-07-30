@@ -21,24 +21,19 @@
         rel="stylesheet">
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif']
-                    },
-                    colors: {
-                        primary: "#059669",
-                        secondary: "#0f172a",
-                        accent: "#f59e0b"
-                    },
-                    boxShadow: {
-                        glass: "0 20px 60px rgba(15,23,42,.12)",
-                        hero: "0 40px 120px rgba(5,150,105,.35)"
-                    }
-                }
+       tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: "#9A6A00",      // oro scuro
+                secondary: "#4A3A16",    // marrone oliva
+                accent: "#C58B00",       // oro
+                cream: "#F8F5ED",        // avorio
+                dark: "#1F1A13"          // quasi nero caldo
             }
         }
+    }
+}
     </script>
 
     <style>
@@ -79,9 +74,9 @@
             pointer-events: none;
         }
 
-        .glow-green {
-            background: #10b981;
-        }
+        .glow-gold{
+    background:#C58B00;
+}
 
         .glow-blue {
             background: #3b82f6;
@@ -114,14 +109,14 @@
                 <div class="h-20 flex items-center justify-between px-6">
                     <!-- Logo -->
                     <a href="#home" class="flex items-center gap-3 group">
-                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#C58B00] to-[#8A5E00] text-white flex items-center justify-center shadow-lg group-hover:scale-105 transition">
                             <i data-lucide="bike" class="w-6 h-6"></i>
                         </div>
                         <div>
                             <p class="text-xl font-extrabold tracking-tight text-slate-900 leading-none">
                                 ASCITUR
                             </p>
-                            <p class="text-xs text-emerald-700 font-semibold mt-1">
+                            <p class="text-xs text-[#7B5600] font-semibold mt-1">
                                 Cicloturismo Valencia
                             </p>
                         </div>
@@ -129,17 +124,17 @@
 
                     <!-- Desktop Nav -->
                     <div class="hidden lg:flex items-center gap-8">
-                        <a href="#about" class="font-medium hover:text-emerald-600 transition">Sobre nosotros</a>
-                        <a href="#services" class="font-medium hover:text-emerald-600 transition">Servicios</a>
-                        <a href="#companies" class="font-medium hover:text-emerald-600 transition">Asociados</a>
-                        <a href="#collaboration" class="font-medium hover:text-emerald-600 transition">Colaboración</a>
-                        <a href="#blog" class="font-medium hover:text-emerald-600 transition">Noticias</a>
+                        <a href="#about" class="font-medium hover:text-[#9A6A00] transition">Sobre nosotros</a>
+                        <a href="#services" class="font-medium hover:text-[#9A6A00] transition">Servicios</a>
+                        <a href="#companies" class="font-medium hover:text-[#9A6A00] transition">Asociados</a>
+                        <a href="#collaboration" class="font-medium hover:text-[#9A6A00] transition">Colaboración</a>
+                        <a href="#blog" class="font-medium hover:text-[#9A6A00] transition">Noticias</a>
                     </div>
 
                     <!-- CTA -->
                     <div class="hidden lg:flex items-center gap-4">
                         <a href="mailto:contacto@ascitur.es"
-                            class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-lg transition hover:scale-105">
+                            class="px-6 py-3 rounded-xl bg-[#9A6A00] hover:bg-[#7B5600] text-white font-semibold shadow-lg transition hover:scale-105">
                             Contacto
                         </a>
                     </div>
@@ -162,7 +157,7 @@
                     <a href="#collaboration" onclick="toggleMenu()">Colaboración</a>
                     <a href="#blog" onclick="toggleMenu()">Noticias</a>
                     <a href="mailto:contacto@ascitur.es"
-                        class="mt-2 text-center bg-emerald-600 text-white rounded-xl py-3 font-semibold">
+                        class="mt-2 text-center bg-[#9A6A00] text-white rounded-xl py-3 font-semibold">
                         Contacto
                     </a>
                 </div>
@@ -172,7 +167,7 @@
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-bg relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
-        <div class="glow glow-green -top-60 -right-48"></div>
+        <div class="glow glow-gold -top-60 -right-48"></div>
         <div class="glow glow-blue bottom-0 -left-48"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -181,12 +176,12 @@
                 <!-- LEFT -->
                 <div class="lg:col-span-7" data-aos="fade-right">
                     <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark border border-white/20 text-white text-sm font-semibold">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i>
+                        <i data-lucide="sparkles" class="w-4 h-4 text-[#D8A93A]"></i>
                         Turismo Sostenible &amp; Movilidad Urbana · Valencia
                     </span>
 
                     <h1 class="mt-6 text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight">
-                        Descubre <span class="text-emerald-400">Valencia</span> sobre dos ruedas.
+                        Descubre <span class="text-[#D8A93A]">Valencia</span> sobre dos ruedas.
                     </h1>
 
                     <p class="mt-6 text-lg sm:text-xl text-slate-200 leading-relaxed max-w-2xl">
@@ -195,7 +190,7 @@
 
                     <div class="mt-8 flex flex-wrap gap-4">
                         <a href="#companies"
-                            class="px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold shadow-hero transition hover:scale-105 flex items-center gap-2">
+                            class="px-7 py-4 rounded-xl bg-[#9A6A00] hover:bg-[#C58B00] text-white font-bold shadow-hero transition hover:scale-105 flex items-center gap-2">
                             Empresas Asociadas
                             <i data-lucide="arrow-right" class="w-5 h-5"></i>
                         </a>
@@ -208,15 +203,15 @@
                     <!-- QUICK METRICS -->
                     <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/15">
                         <div>
-                            <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400">+120K</p>
+                            <p class="text-3xl sm:text-4xl font-extrabold text-[#D8A93A]">+120K</p>
                             <p class="text-xs sm:text-sm text-slate-300 mt-1">Cicloturistas atendidos al año</p>
                         </div>
                         <div>
-                            <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400">100%</p>
+                            <p class="text-3xl sm:text-4xl font-extrabold text-[#D8A93A]">100%</p>
                             <p class="text-xs sm:text-sm text-slate-300 mt-1">Sostenible y 0 emisiones</p>
                         </div>
                         <div>
-                            <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400">+160km</p>
+                            <p class="text-3xl sm:text-4xl font-extrabold text-[#D8A93A]">+160km</p>
                             <p class="text-xs sm:text-sm text-slate-300 mt-1">Red de carril bici conectada</p>
                         </div>
                     </div>
@@ -229,19 +224,19 @@
                             <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Cicloturismo Valencia" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                             <div class="absolute bottom-4 left-4 right-4 text-white">
-                                <span class="bg-emerald-600 text-xs font-bold px-2.5 py-1 rounded-md">Red Oficial</span>
+                                <span class="bg-[#9A6A00] text-xs font-bold px-2.5 py-1 rounded-md">Red Oficial</span>
                                 <h3 class="text-lg font-bold mt-1">Turismo en Bicicleta de Alta Calidad</h3>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-2 gap-4 mt-4">
                             <div class="bg-white/10 rounded-xl p-4 text-white backdrop-blur-md">
-                                <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400 mb-1"></i>
+                                <i data-lucide="shield-check" class="w-6 h-6 text-[#D8A93A] mb-1"></i>
                                 <p class="text-sm font-bold">Garantía de Calidad</p>
                                 <p class="text-xs text-slate-300 mt-0.5">Empresas con seguro y flotas homologadas.</p>
                             </div>
                             <div class="bg-white/10 rounded-xl p-4 text-white backdrop-blur-md">
-                                <i data-lucide="map-pin" class="w-6 h-6 text-emerald-400 mb-1"></i>
+                                <i data-lucide="map-pin" class="w-6 h-6 text-[#D8A93A] mb-1"></i>
                                 <p class="text-sm font-bold">Rutas Guiadas</p>
                                 <p class="text-xs text-slate-300 mt-0.5">Guías locales oficiales e idiomas.</p>
                             </div>
@@ -255,7 +250,7 @@
 
     <!-- ABOUT SECTION -->
     <section id="about" class="py-16 md:py-20 bg-white relative overflow-hidden">
-        <div class="glow glow-green -right-72 top-40"></div>
+        <div class="glow glow-gold -right-72 top-40"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -269,7 +264,7 @@
 
                     <div class="absolute -bottom-6 -right-2 sm:right-6 glass rounded-2xl p-5 shadow-xl border border-slate-200/80 max-w-xs">
                         <div class="flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                            <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center shrink-0">
                                 <i data-lucide="award" class="w-6 h-6"></i>
                             </div>
                             <div>
@@ -282,7 +277,7 @@
 
                 <!-- TEXT -->
                 <div data-aos="fade-left">
-                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase">
+                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-[#F4E7C1] text-[#5A3F00] text-xs font-bold tracking-wide uppercase">
                         ¿Quiénes Somos?
                     </span>
 
@@ -302,7 +297,7 @@
                     <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80">
                             <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#9A6A00]"></i>
                                 Movilidad Conectada
                             </div>
                             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
@@ -311,7 +306,7 @@
                         </div>
                         <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80">
                             <div class="flex items-center gap-2 font-bold text-slate-900 text-sm">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#9A6A00]"></i>
                                 Formación Continua
                             </div>
                             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
@@ -326,7 +321,7 @@
             <!-- VALUES -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
                 <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
                         <i data-lucide="leaf" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Sostenibilidad</h3>
@@ -336,7 +331,7 @@
                 </div>
 
                 <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
                         <i data-lucide="users" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Colaboración</h3>
@@ -346,7 +341,7 @@
                 </div>
 
                 <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
                         <i data-lucide="shield-check" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Seguridad Vial</h3>
@@ -356,7 +351,7 @@
                 </div>
 
                 <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
                         <i data-lucide="badge-check" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Calidad Certificada</h3>
@@ -374,7 +369,7 @@
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center max-w-3xl mx-auto">
-                <span class="inline-flex px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold tracking-wide uppercase border border-emerald-500/30">
+                <span class="inline-flex px-3.5 py-1.5 rounded-full bg-[#C58B00]/20 text-emerald-300 text-xs font-bold tracking-wide uppercase border border-[#9A6A00]/30">
                     Servicios Integrales
                 </span>
                 <h2 class="text-3xl sm:text-5xl font-black mt-4">¿Qué aportamos al sector cicloturístico?</h2>
@@ -384,8 +379,8 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6">
+                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-[#9A6A00]/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center mb-6">
                         <i data-lucide="map" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Diseño de Rutas e Itinerarios</h3>
@@ -398,8 +393,8 @@
                     </ul>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6">
+                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-[#9A6A00]/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center mb-6">
                         <i data-lucide="building-2" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Representación Institucional</h3>
@@ -412,8 +407,8 @@
                     </ul>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-6">
+                <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 shadow-lg hover:border-[#9A6A00]/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center mb-6">
                         <i data-lucide="sparkles" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Promoción y Marketing</h3>
@@ -431,13 +426,13 @@
 
     <!-- ASSOCIATED COMPANIES -->
     <section id="companies" class="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
-        <div class="glow glow-green -left-80 top-40"></div>
+        <div class="glow glow-gold -left-80 top-40"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <!-- HEADER -->
             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
-                <span class="inline-flex px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase">
+                <span class="inline-flex px-3.5 py-1.5 rounded-full bg-[#F4E7C1] text-[#5A3F00] text-xs font-bold tracking-wide uppercase">
                     Empresas Asociadas
                 </span>
                 <h2 class="section-title mt-4 text-slate-900">
@@ -457,7 +452,7 @@
                         <div class="h-44 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="Valencia Bikes"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Bike Rental &amp; Tours
                             </span>
                         </div>
@@ -467,13 +462,13 @@
                                 Pioneros en el alquiler de bicicletas y rutas guiadas por el centro histórico, Ciudad de las Artes y el Jardín del Turia.
                             </p>
                             <ul class="mt-4 space-y-1 text-xs text-slate-500">
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Bicis urbanas y e-bikes</li>
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Guiado en 5 idiomas</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Bicis urbanas y e-bikes</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Guiado en 5 idiomas</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-5 pt-0">
-                        <a href="#contact" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -485,7 +480,7 @@
                         <div class="h-44 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=600&q=80" alt="Passion Bikes"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Experiencias
                             </span>
                         </div>
@@ -495,41 +490,13 @@
                                 Especialistas en rutas gastronómicas sobre dos ruedas y alquiler de bicicletas de carretera y trekking de alta gama.
                             </p>
                             <ul class="mt-4 space-y-1 text-xs text-slate-500">
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tours de paella &amp; Albufera</li>
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Asistencia técnica rápida</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Tours de paella &amp; Albufera</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Asistencia técnica rápida</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-5 pt-0">
-                        <a href="#contact" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
-                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- CARD 3 -->
-                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
-                    <div>
-                        <div class="h-44 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=600&q=80" alt="DOYOUBIKE"
-                                class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
-                                Movilidad Sostenible
-                            </span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="text-xl font-bold text-slate-900">DOYOUBIKE</h3>
-                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
-                                Red de tiendas y talleres con servicio de alquiler de larga duración para visitantes y residentes en Valencia.
-                            </p>
-                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Taller especializado</li>
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Venta de accesorios</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <a href="#contact" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -541,7 +508,91 @@
                         <div class="h-44 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Ruzafa Bike Rent"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                                Local &amp; Neighborhood
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-slate-900">Verrasend</h3>
+                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                                Ubicados en el céntrico barrio de Ruzafa, ofrecen atención personalizada y rutas alternativas por barrios emblemáticos.
+                            </p>
+                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Tarifas adaptables por día</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Sillas para niños</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
+                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=600&q=80" alt="DOYOUBIKE"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                                Movilidad Sostenible
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-slate-900">DOYOUBIKE</h3>
+                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                                Red de tiendas y talleres con servicio de alquiler de larga duración para visitantes y residentes en Valencia.
+                            </p>
+                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Taller especializado</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Venta de accesorios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
+                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=600&q=80" alt="DOYOUBIKE"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                                Movilidad Sostenible
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-slate-900">My rent GO</h3>
+                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                                Red de tiendas y talleres con servicio de alquiler de larga duración para visitantes y residentes en Valencia.
+                            </p>
+                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Taller especializado</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Venta de accesorios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
+                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Ruzafa Bike Rent"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Local &amp; Neighborhood
                             </span>
                         </div>
@@ -551,13 +602,69 @@
                                 Ubicados en el céntrico barrio de Ruzafa, ofrecen atención personalizada y rutas alternativas por barrios emblemáticos.
                             </p>
                             <ul class="mt-4 space-y-1 text-xs text-slate-500">
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tarifas adaptables por día</li>
-                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Sillas para niños</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Tarifas adaptables por día</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Sillas para niños</li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-5 pt-0">
-                        <a href="#contact" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
+                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Ruzafa Bike Rent"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                                Local &amp; Neighborhood
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-slate-900">Happy Tourist Center</h3>
+                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                                Ubicados en el céntrico barrio de Ruzafa, ofrecen atención personalizada y rutas alternativas por barrios emblemáticos.
+                            </p>
+                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Tarifas adaptables por día</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Sillas para niños</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
+                            Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                 <!-- CARD 4 -->
+                <article class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80" alt="Ruzafa Bike Rent"
+                                class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                                Local &amp; Neighborhood
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-slate-900">RentBike Virgen</h3>
+                            <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                                Ubicados en el céntrico barrio de Ruzafa, ofrecen atención personalizada y rutas alternativas por barrios emblemáticos.
+                            </p>
+                            <ul class="mt-4 space-y-1 text-xs text-slate-500">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Tarifas adaptables por día</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-[#9A6A00]"></i> Sillas para niños</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Más información <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -568,7 +675,7 @@
             <!-- CALL TO ACTION FOR NEW MEMBERS -->
             <div class="mt-12 text-center" data-aos="fade-up">
                 <a href="#contact"
-                    class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-900 hover:bg-emerald-700 text-white font-bold transition shadow-lg text-sm">
+                    class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-900 hover:bg-[#7B5600] text-white font-bold transition shadow-lg text-sm">
                     ¿Tienes una empresa de cicloturismo y quieres unirte?
                     <i data-lucide="plus-circle" class="w-5 h-5"></i>
                 </a>
@@ -579,7 +686,7 @@
 
     <!-- COLLABORATION SECTION -->
     <section id="collaboration" class="py-16 md:py-20 bg-white relative overflow-hidden">
-        <div class="glow glow-green -right-80 top-20"></div>
+        <div class="glow glow-gold -right-80 top-20"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -587,7 +694,7 @@
 
                 <!-- LEFT TEXT & TIMELINE -->
                 <div class="lg:col-span-7" data-aos="fade-right">
-                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase">
+                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-[#F4E7C1] text-[#5A3F00] text-xs font-bold tracking-wide uppercase">
                         Alianza Público-Privada
                     </span>
 
@@ -602,7 +709,7 @@
                     <div class="mt-8 space-y-6">
 
                         <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow">
+                            <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center shrink-0 shadow">
                                 <i data-lucide="landmark" class="w-6 h-6"></i>
                             </div>
                             <div>
@@ -614,7 +721,7 @@
                         </div>
 
                         <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow">
+                            <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center shrink-0 shadow">
                                 <i data-lucide="map-pin" class="w-6 h-6"></i>
                             </div>
                             <div>
@@ -626,7 +733,7 @@
                         </div>
 
                         <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow">
+                            <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center shrink-0 shadow">
                                 <i data-lucide="traffic-cone" class="w-6 h-6"></i>
                             </div>
                             <div>
@@ -643,7 +750,7 @@
                 <!-- RIGHT CARD -->
                 <div class="lg:col-span-5" data-aos="fade-left">
                     <div class="rounded-3xl bg-slate-900 p-8 text-white shadow-2xl relative overflow-hidden">
-                        <div class="w-14 h-14 rounded-2xl bg-emerald-500 text-slate-950 flex items-center justify-center mb-6 font-bold">
+                        <div class="w-14 h-14 rounded-2xl bg-[#C58B00] text-slate-950 flex items-center justify-center mb-6 font-bold">
                             <i data-lucide="handshake" class="w-7 h-7"></i>
                         </div>
 
@@ -655,26 +762,26 @@
 
                         <div class="mt-6 space-y-3 border-t border-slate-800 pt-6">
                             <div class="flex items-center gap-3 text-sm">
-                                <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <div class="w-6 h-6 rounded-full bg-[#C58B00]/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-4 h-4 text-[#D8A93A]"></i>
                                 </div>
                                 <span class="text-slate-200">Asesoramiento jurídico y de licencias</span>
                             </div>
                             <div class="flex items-center gap-3 text-sm">
-                                <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <div class="w-6 h-6 rounded-full bg-[#C58B00]/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-4 h-4 text-[#D8A93A]"></i>
                                 </div>
                                 <span class="text-slate-200">Visibilidad en canales oficiales</span>
                             </div>
                             <div class="flex items-center gap-3 text-sm">
-                                <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                                <div class="w-6 h-6 rounded-full bg-[#C58B00]/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-4 h-4 text-[#D8A93A]"></i>
                                 </div>
                                 <span class="text-slate-200">Acceso a formación y acuerdos marco</span>
                             </div>
                         </div>
 
-                        <a href="mailto:contacto@ascitur.es" class="mt-8 w-full block text-center py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition">
+                        <a href="mailto:contacto@ascitur.es" class="mt-8 w-full block text-center py-3.5 rounded-xl bg-[#C58B00] hover:bg-[#C58B00] text-slate-950 font-bold transition">
                             Solicitar Adhesión
                         </a>
                     </div>
@@ -687,14 +794,14 @@
 
     <!-- BLOG / NEWS SECTION WITH TEST ARTICLES -->
     <section id="blog" class="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
-        <div class="glow glow-green -left-80 bottom-0"></div>
+        <div class="glow glow-gold -left-80 bottom-0"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <!-- HEADER -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6" data-aos="fade-up">
                 <div class="max-w-2xl">
-                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase">
+                    <span class="inline-flex px-3.5 py-1.5 rounded-full bg-[#F4E7C1] text-[#5A3F00] text-xs font-bold tracking-wide uppercase">
                         Noticias &amp; Actualidad
                     </span>
                     <h2 class="section-title mt-3 text-slate-900">
@@ -705,7 +812,7 @@
                     </p>
                 </div>
 
-                <a href="#blog" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-600 transition shadow-sm shrink-0">
+                <a href="#blog" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm font-bold text-slate-700 hover:border-[#9A6A00] hover:text-[#9A6A00] transition shadow-sm shrink-0">
                     Ver todos los artículos
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
@@ -720,18 +827,18 @@
                         <div class="h-52 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=600&q=80" alt="Ampliación del Anillo Verde"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Infraestructura
                             </span>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-2 text-xs text-slate-500 mb-2">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-emerald-600"></i>
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#9A6A00]"></i>
                                 <span>12 Julio, 2026</span>
                                 <span>•</span>
                                 <span>4 min lectura</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 hover:text-emerald-600 transition">
+                            <h3 class="text-xl font-bold text-slate-900 hover:text-[#9A6A00] transition">
                                 Valencia amplía el Anillo Verde Ciclista conectando la Huerta y la Albufera
                             </h3>
                             <p class="mt-3 text-slate-600 text-xs leading-relaxed">
@@ -740,7 +847,7 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Leer artículo completo <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -752,18 +859,18 @@
                         <div class="h-52 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?auto=format&fit=crop&w=600&q=80" alt="Guía de buenas prácticas"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Guía &amp; Consejos
                             </span>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-2 text-xs text-slate-500 mb-2">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-emerald-600"></i>
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#9A6A00]"></i>
                                 <span>28 Junio, 2026</span>
                                 <span>•</span>
                                 <span>5 min lectura</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 hover:text-emerald-600 transition">
+                            <h3 class="text-xl font-bold text-slate-900 hover:text-[#9A6A00] transition">
                                 Decálogo del cicloturista responsable en el centro histórico de Valencia
                             </h3>
                             <p class="mt-3 text-slate-600 text-xs leading-relaxed">
@@ -772,7 +879,7 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Leer artículo completo <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -784,18 +891,18 @@
                         <div class="h-52 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="I Foro de Turismo Sostenible"
                                 class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            <span class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Eventos
                             </span>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-2 text-xs text-slate-500 mb-2">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-emerald-600"></i>
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#9A6A00]"></i>
                                 <span>15 Mayo, 2026</span>
                                 <span>•</span>
                                 <span>3 min lectura</span>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 hover:text-emerald-600 transition">
+                            <h3 class="text-xl font-bold text-slate-900 hover:text-[#9A6A00] transition">
                                 Éxito de participación en el I Foro Regional de Cicloturismo Urbano
                             </h3>
                             <p class="mt-3 text-slate-600 text-xs leading-relaxed">
@@ -804,7 +911,7 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="#" class="inline-flex items-center gap-2 text-emerald-600 font-bold text-xs hover:text-emerald-700">
+                        <a href="#" class="inline-flex items-center gap-2 text-[#9A6A00] font-bold text-xs hover:text-[#7B5600]">
                             Leer artículo completo <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -817,8 +924,8 @@
 
     <!-- CONTACT CTA -->
     <section id="contact" class="relative py-16 md:py-20 overflow-hidden bg-slate-950">
-        <div class="absolute inset-0 bg-gradient-to-br from-emerald-950 via-slate-950 to-slate-950"></div>
-        <div class="glow glow-green top-0 right-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-[#3F2C00] via-slate-950 to-slate-950"></div>
+        <div class="glow glow-gold top-0 right-0"></div>
 
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
             <span class="inline-flex px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-emerald-300 text-xs font-bold tracking-wide uppercase">
@@ -835,7 +942,7 @@
 
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="mailto:contacto@ascitur.es"
-                    class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-base transition hover:scale-105 shadow-xl">
+                    class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#C58B00] hover:bg-[#C58B00] text-slate-950 font-black text-base transition hover:scale-105 shadow-xl">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                     Escribir a contacto@ascitur.es
                 </a>
@@ -857,7 +964,7 @@
                 <!-- BRAND -->
                 <div class="md:col-span-2">
                     <a href="#home" class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center">
                             <i data-lucide="bike" class="w-5 h-5"></i>
                         </div>
                         <span class="text-xl font-black text-white">ASCITUR</span>
@@ -869,13 +976,13 @@
 
                     <!-- SOCIAL -->
                     <div class="flex gap-3 mt-6">
-                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-emerald-600 flex items-center justify-center transition text-white">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white">
                             <i data-lucide="instagram" class="w-4 h-4"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-emerald-600 flex items-center justify-center transition text-white">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white">
                             <i data-lucide="linkedin" class="w-4 h-4"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-emerald-600 flex items-center justify-center transition text-white">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white">
                             <i data-lucide="facebook" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -885,11 +992,11 @@
                 <div>
                     <h3 class="text-white font-bold text-sm mb-4">Navegación</h3>
                     <ul class="space-y-2.5 text-xs sm:text-sm">
-                        <li><a href="#about" class="hover:text-emerald-400 transition">Sobre nosotros</a></li>
-                        <li><a href="#services" class="hover:text-emerald-400 transition">Servicios</a></li>
-                        <li><a href="#companies" class="hover:text-emerald-400 transition">Asociados</a></li>
-                        <li><a href="#collaboration" class="hover:text-emerald-400 transition">Colaboración</a></li>
-                        <li><a href="#blog" class="hover:text-emerald-400 transition">Noticias</a></li>
+                        <li><a href="#about" class="hover:text-[#D8A93A] transition">Sobre nosotros</a></li>
+                        <li><a href="#services" class="hover:text-[#D8A93A] transition">Servicios</a></li>
+                        <li><a href="#companies" class="hover:text-[#D8A93A] transition">Asociados</a></li>
+                        <li><a href="#collaboration" class="hover:text-[#D8A93A] transition">Colaboración</a></li>
+                        <li><a href="#blog" class="hover:text-[#D8A93A] transition">Noticias</a></li>
                     </ul>
                 </div>
 
@@ -898,11 +1005,11 @@
                     <h3 class="text-white font-bold text-sm mb-4">Contacto</h3>
                     <ul class="space-y-2.5 text-xs sm:text-sm">
                         <li class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
-                            <a href="mailto:contacto@ascitur.es" class="hover:text-emerald-400 transition">contacto@ascitur.es</a>
+                            <i data-lucide="mail" class="w-4 h-4 text-[#D8A93A]"></i>
+                            <a href="mailto:contacto@ascitur.es" class="hover:text-[#D8A93A] transition">contacto@ascitur.es</a>
                         </li>
                         <li class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+                            <i data-lucide="map-pin" class="w-4 h-4 text-[#D8A93A]"></i>
                             <span>Valencia, España</span>
                         </li>
                     </ul>

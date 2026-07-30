@@ -111,7 +111,7 @@ if ('loading' in HTMLImageElement.prototype) {
 const createScrollTopButton = () => {
     const button = document.createElement('button');
     button.innerHTML = '<i data-lucide="arrow-up"></i>';
-    button.className = 'fixed bottom-8 right-8 w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center justify-center';
+    button.className = 'fixed bottom-8 right-8 w-14 h-14 bg-[#9A6A00] hover:bg-[#7B5600] text-white rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center justify-center';
     button.id = 'scrollTopBtn';
     document.body.appendChild(button);
     
