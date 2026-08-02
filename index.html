@@ -11,8 +11,7 @@
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
-    <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
-    <script src="https://unpkg.com/lucide@0.321.0/dist/umd/lucide.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Font -->
@@ -515,16 +514,15 @@
                         </a>
                     </div>
                 </article>
-                 <!-- CARD 2 -->
+
+                <!-- CARD 2 -->
                 <article
                     class="card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between"
                     data-aos="fade-up" data-aos-delay="400">
                     <div>
-                        <!-- Aggiunto bg-slate-50 e p-4 al contenitore -->
                         <div class="h-44 overflow-hidden relative bg-slate-50 p-4 flex items-center justify-center">
                             <img src="./images/loghi/Logo-con-nombre.png"
                                 alt="RentBike Virgen" class="w-full h-full object-contain">
-                            <!-- Cambiato in object-contain -->
                             <span
                                 class="absolute top-3 left-3 bg-[#9A6A00] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                                 Alquiler de bicis
@@ -821,8 +819,7 @@
                                 <i data-lucide="map-pin" class="w-6 h-6"></i>
                             </div>
                             <div>
-                                <h3 class="text-base font-bold text-slate-900">Visit València y Patronatos de Turismo
-                                </h3>
+                                <h3 class="text-base font-bold text-slate-900">Visit València y Patronatos de Turismo</h3>
                                 <p class="mt-1 text-slate-600 text-xs leading-relaxed">
                                     Promoción unificada de la marca Valencia Ciudad Ciclable en el mercado nacional e
                                     internacional.
@@ -847,7 +844,41 @@
                     </div>
                 </div>
 
-                 
+                <!-- RIGHT BLOCK: STRATEGIC ALIGNMENT -->
+                <div class="lg:col-span-5" data-aos="fade-left">
+                    <div class="p-8 rounded-3xl bg-slate-900 text-white shadow-2xl border border-slate-800 relative">
+                        <div class="w-12 h-12 rounded-xl bg-[#9A6A00] text-white flex items-center justify-center mb-6">
+                            <i data-lucide="compass" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-[#D8A93A] text-xs font-bold uppercase tracking-wider block mb-2">Compromiso 2026</span>
+                        <h3 class="text-2xl font-bold mb-4">Alineación con la Estrategia Turística de Valencia</h3>
+                        
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            El <strong>Plan de Actuaciones 2026 de la Fundación Visit Valencia</strong> busca posicionar a Valencia como destino urbano líder del Mediterráneo, gestionando el turismo de forma sostenible y respetando el estilo de vida local.
+                        </p>
+                        
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            ASCITUR comparte plenamente esta visión. El alquiler profesional de bicicletas requiere orden, coordinación e información para maximizar los beneficios sociales y minimizar impactos negativos.
+                        </p>
+
+                        <div class="pt-4 border-t border-slate-800 space-y-3 text-xs text-emerald-300">
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#D8A93A] shrink-0 mt-0.5"></i>
+                                <span>El ciudadano en el centro de la acción turística.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#D8A93A] shrink-0 mt-0.5"></i>
+                                <span>Decisiones basadas en datos y colaboración público-privada.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#D8A93A] shrink-0 mt-0.5"></i>
+                                <span>Convivencia armónica entre peatones, ciclistas y residentes.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </section>
@@ -980,12 +1011,22 @@
                     </p>
 
                     <!-- SOCIAL -->
-                    <div class="flex gap-3 mt-6"> 
-                        <a href="https://linkedin.com/in/ascitur-valencia-658987368"
+                    <div class="flex gap-3 mt-6">
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white"
+                            aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#"
                             class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white"
                             aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="w-4 h-4"></i>
-                        </a> 
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white"
+                            aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -1013,9 +1054,9 @@
                         <li class="flex items-start gap-2">
                             <i data-lucide="map-pin" class="w-4 h-4 text-[#D8A93A] shrink-0 mt-0.5"></i>
                             <a href="https://www.google.com/maps/place/C%2F+de+la+Sang,+9,+Ciutat+Vella,+46002+Val%C3%A8ncia/@39.4704976,-0.3799395,17z/data=!3m1!4b1!4m6!3m5!1s0xd604f4c7efb09b5:0x1ab5e2fc6829066!8m2!3d39.4704935!4d-0.3773646!16s%2Fg%2F11nnss2r3t" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            class="hover:text-[#D8A93A] transition">
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="hover:text-[#D8A93A] transition">
                                 C/ de la Sang, 9, Ciutat Vella, 46002 València
                             </a>
                         </li>
@@ -1046,8 +1087,12 @@
             once: true
         });
 
-        // Init Lucide Icons
-        lucide.createIcons();
+        // Init Lucide Icons safely after DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
 
         // Mobile Menu Toggle
         function toggleMenu() {
