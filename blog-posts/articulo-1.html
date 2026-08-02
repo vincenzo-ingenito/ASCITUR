@@ -1,22 +1,73 @@
-<!-- INIZIO ARTICOLO ASCITUR -->
-<div class="ascitur-article-container">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicloturismo: El Turismo del Futuro | ASCITUR Valencia</title>
+    <meta name="description"
+        content="Descubre por qué la bicicleta se posiciona como el medio de transporte preferido para explorar ciudades de forma responsable y sostenible.">
+    <meta name="theme-color" content="#059669">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+       tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#9A6A00",      // oro scuro
+                        secondary: "#4A3A16",    // marrone oliva
+                        accent: "#C58B00",       // oro
+                        cream: "#F8F5ED",        // avorio
+                        dark: "#1F1A13"          // quasi nero caldo
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            backdrop-filter: blur(18px);
+            background: rgba(255, 255, 255, .82);
+        }
+
+        /* Stili specifici dell'articolo integrati */
         .ascitur-article-container {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             color: #2b2b2b;
             line-height: 1.7;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
 
         .ascitur-category-badge {
             display: inline-block;
-            background-color: #e07b39;
+            background-color: #9A6A00;
             color: #ffffff;
             padding: 4px 12px;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
@@ -27,7 +78,7 @@
         .ascitur-title {
             font-size: 32px;
             line-height: 1.25;
-            color: #1b4332;
+            color: #1F1A13;
             margin: 0 0 15px 0;
             font-weight: 800;
         }
@@ -52,9 +103,9 @@
         }
 
         .ascitur-featured-box {
-            background-color: #2d6a4f;
+            background-color: #4A3A16;
             color: #ffffff;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 25px;
             margin-bottom: 35px;
             text-align: center;
@@ -63,7 +114,8 @@
         .ascitur-featured-box h3 {
             margin: 0 0 10px 0;
             font-size: 20px;
-            color: #d8f3dc;
+            color: #F8F5ED;
+            font-weight: 700;
         }
 
         .ascitur-featured-box p {
@@ -75,10 +127,11 @@
 
         .ascitur-article-container h2 {
             font-size: 22px;
-            color: #1b4332;
+            color: #1F1A13;
             margin: 35px 0 15px 0;
             padding-bottom: 6px;
-            border-bottom: 2px solid #2d6a4f;
+            border-bottom: 2px solid #9A6A00;
+            font-weight: 700;
         }
 
         .ascitur-article-container p {
@@ -87,12 +140,13 @@
         }
 
         .ascitur-article-container strong {
-            color: #1b4332;
+            color: #1F1A13;
         }
 
         .ascitur-article-container ul {
             margin: 10px 0 20px 20px;
             padding: 0;
+            list-style-type: disc;
         }
 
         .ascitur-article-container li {
@@ -101,17 +155,18 @@
         }
 
         .ascitur-highlight-box {
-            background-color: #f0fdf4;
-            border-left: 4px solid #2d6a4f;
+            background-color: #F8F5ED;
+            border-left: 4px solid #9A6A00;
             padding: 18px 20px;
             margin: 25px 0;
             border-radius: 0 8px 8px 0;
         }
 
         .ascitur-highlight-box h4 {
-            color: #1b4332;
+            color: #1F1A13;
             margin: 0 0 8px 0;
             font-size: 14px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -124,7 +179,7 @@
 
         .ascitur-quote-box {
             background-color: #fff8f1;
-            border-left: 4px solid #e07b39;
+            border-left: 4px solid #C58B00;
             padding: 20px 24px;
             margin: 30px 0;
             font-style: italic;
@@ -140,7 +195,7 @@
             gap: 15px;
             background-color: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 20px;
             margin: 40px 0 30px 0;
         }
@@ -148,7 +203,7 @@
         .ascitur-author-avatar {
             width: 50px;
             height: 50px;
-            background-color: #1b4332;
+            background-color: #9A6A00;
             color: #ffffff;
             border-radius: 50%;
             display: flex;
@@ -161,8 +216,9 @@
 
         .ascitur-author-details h4 {
             margin: 0 0 4px 0;
-            color: #1b4332;
+            color: #1F1A13;
             font-size: 16px;
+            font-weight: 700;
         }
 
         .ascitur-author-details p {
@@ -173,7 +229,7 @@
 
         .ascitur-section-title {
             font-size: 20px;
-            color: #1b4332;
+            color: #1F1A13;
             margin: 35px 0 20px 0;
             font-weight: 700;
             border-bottom: 1px solid #cbd5e1;
@@ -183,7 +239,7 @@
         .ascitur-comment-item {
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
-            border-left: 3px solid #2d6a4f;
+            border-left: 3px solid #9A6A00;
             padding: 15px 18px;
             margin-bottom: 15px;
             border-radius: 6px;
@@ -213,133 +269,292 @@
 
         @media (max-width: 600px) {
             .ascitur-title { font-size: 24px; }
-            .ascitur-article-container { padding: 10px; }
+            .ascitur-article-container { padding: 15px; }
         }
     </style>
+</head>
 
-    <!-- INTESTAZIONE ARTICOLO -->
-    <div>
-        <span class="ascitur-category-badge">Sostenibilidad</span>
-        <h1 class="ascitur-title">Cicloturismo: El Turismo del Futuro</h1>
-        <div class="ascitur-excerpt">
-            Descubre por qué la bicicleta se posiciona como el medio de transporte preferido para explorar ciudades de forma responsable, sostenible y enriquecedora.
+<body class="font-sans text-slate-800 bg-slate-50 min-h-screen flex flex-col justify-between">
+
+    <!-- NAVBAR FISSA -->
+    <header id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="glass mt-4 rounded-2xl border border-white/60 shadow-glass">
+                <div class="h-20 flex items-center justify-between px-6">
+                    <!-- Logo -->
+                    <a href="../index.html#home" class="flex items-center gap-3 group">
+                        <div class="flex items-center justify-center group-hover:scale-105 transition">
+                            <img src="../images/Logo-Ascitur.svg" alt="ASCITUR" class="h-16 w-auto">
+                        </div>
+                        <div>
+                            <p class="text-xl font-extrabold tracking-tight text-slate-900 leading-none">
+                                ASCITUR
+                            </p>
+                            <p class="text-xs text-[#7B5600] font-semibold mt-1">
+                                Cicloturismo Valencia
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Nav -->
+                    <div class="hidden lg:flex items-center gap-8">
+                        <a href="../index.html#about" class="font-medium hover:text-[#9A6A00] transition">Sobre nosotros</a>
+                        <a href="../index.html#services" class="font-medium hover:text-[#9A6A00] transition">Servicios</a>
+                        <a href="../index.html#companies" class="font-medium hover:text-[#9A6A00] transition">Asociados</a>
+                        <a href="../index.html#collaboration" class="font-medium hover:text-[#9A6A00] transition">Colaboración</a>
+                        <a href="../index.html#blog" class="font-medium text-[#9A6A00] font-bold transition">Noticias</a>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="hidden lg:flex items-center gap-4">
+                        <a href="mailto:contacto@ascitur.es"
+                            class="px-6 py-3 rounded-xl bg-[#9A6A00] hover:bg-[#7B5600] text-white font-semibold shadow-lg transition hover:scale-105">
+                            Contacto
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menuButton" class="lg:hidden p-2 rounded-xl text-slate-800" onclick="toggleMenu()" aria-label="Abrir menú">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
 
-        <div class="ascitur-meta">
-            <span>📅 <strong>Publicado:</strong> 29 de julio, 2024</span>
-            <span>✍️ <strong>Autor:</strong> ASCITUR Valencia</span>
-            <span>⏱️ <strong>Lectura:</strong> 8 min</span>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="hidden lg:hidden">
+            <div class="mx-6 mt-3 glass rounded-2xl shadow-xl border border-white/50 p-6">
+                <div class="flex flex-col gap-4 font-medium">
+                    <a href="../index.html#about" onclick="toggleMenu()">Sobre nosotros</a>
+                    <a href="../index.html#services" onclick="toggleMenu()">Servicios</a>
+                    <a href="../index.html#companies" onclick="toggleMenu()">Asociados</a>
+                    <a href="../index.html#collaboration" onclick="toggleMenu()">Colaboración</a>
+                    <a href="../index.html#blog" onclick="toggleMenu()">Noticias</a>
+                    <a href="mailto:contacto@ascitur.es"
+                        class="mt-2 text-center bg-[#9A6A00] text-white rounded-xl py-3 font-semibold">
+                        Contacto
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- BANNER DESTACADO -->
-    <div class="ascitur-featured-box">
-        <h3>Explorando Valencia sobre Dos Ruedas</h3>
-        <p>Una experiencia de viaje respetuosa con el medio ambiente, conectada con la cultura local y la movilidad urbana del futuro.</p>
-    </div>
+    <!-- SPAGNOLETTA / MARGINE PER NAVBAR FISSA -->
+    <main class="pt-32 pb-16 px-4 flex-grow">
+        
+        <!-- INIZIO ARTICOLO ASCITUR -->
+        <article class="ascitur-article-container">
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <p>El turismo mundial enfrenta un cambio de paradigma. Mientras que los modelos tradicionales de viaje han generado impactos significativos en el medio ambiente y la calidad de vida de los residentes, una alternativa se gana cada vez más adeptos: <strong>el cicloturismo</strong>.</p>
+            <!-- INTESTAZIONE ARTICOLO -->
+            <div>
+                <span class="ascitur-category-badge">Sostenibilidad</span>
+                <h1 class="ascitur-title">Cicloturismo: El Turismo del Futuro</h1>
+                <div class="ascitur-excerpt">
+                    Descubre por qué la bicicleta se posiciona como el medio de transporte preferido para explorar ciudades de forma responsable, sostenible y enriquecedora.
+                </div>
 
-    <p>En Valencia, esta tendencia cobra especial relevancia. La ciudad, con su red de carriles bici en expansión y su patrimonio accesible a dos ruedas, se posiciona como uno de los destinos cicloturísticos más atractivos del Mediterráneo. Pero, ¿qué hace que el cicloturismo sea realmente el turismo del futuro?</p>
+                <div class="ascitur-meta">
+                    <span>📅 <strong>Publicado:</strong> 29 de julio, 2024</span>
+                    <span>✍️ <strong>Autor:</strong> ASCITUR Valencia</span>
+                    <span>⏱️ <strong>Lectura:</strong> 8 min</span>
+                </div>
+            </div>
 
-    <h2>1. Sostenibilidad Sin Compromiso</h2>
-    <p>La bicicleta es el medio de transporte más amigable con el medio ambiente disponible. A diferencia de los vehículos motorizados, no emite gases de efecto invernadero, no contamina el aire y su fabricación requiere una fracción de los recursos necesarios para producir un automóvil.</p>
+            <!-- BANNER DESTACADO -->
+            <div class="ascitur-featured-box">
+                <h3>Explorando Valencia sobre Dos Ruedas</h3>
+                <p>Una experiencia de viaje respetuosa con el medio ambiente, conectada con la cultura local y la movilidad urbana del futuro.</p>
+            </div>
 
-    <div class="ascitur-highlight-box">
-        <h4>Datos relevantes</h4>
-        <p><strong>Un cicloturista consume 5 veces menos energía que un viajero en transporte motorizado</strong> y genera cero residuos durante su desplazamiento. En ciudades como Valencia, donde la contaminación del aire es una preocupación creciente, el cicloturismo ofrece una solución real.</p>
-    </div>
+            <!-- CONTENIDO PRINCIPAL -->
+            <p>El turismo mundial enfrenta un cambio de paradigma. Mientras que los modelos tradicionales de viaje han generado impactos significativos en el medio ambiente y la calidad de vida de los residentes, una alternativa se gana cada vez más adeptos: <strong>el cicloturismo</strong>.</p>
 
-    <p>Además, fomenta el uso de infraestructuras de bajo impacto: carriles bici, espacios verdes y zonas peatonales. Esto ayuda a las ciudades a reimaginar su espacio público, priorizando la vida urbana sobre el tráfico motorizado.</p>
+            <p>En Valencia, esta tendencia cobra especial relevancia. La ciudad, con su red de carriles bici en expansión y su patrimonio accesible a dos ruedas, se posiciona como uno de los destinos cicloturísticos más atractivos del Mediterráneo. Pero, ¿qué hace que el cicloturismo sea realmente el turismo del futuro?</p>
 
-    <h2>2. Salud y Bienestar del Viajero</h2>
-    <p>Viajar en bicicleta no es solo una decisión ambiental, es una decisión de salud. Los cicloturistas realizan actividad física moderada mientras disfrutan de su experiencia, lo que genera múltiples beneficios:</p>
+            <h2>1. Sostenibilidad Sin Compromiso</h2>
+            <p>La bicicleta es el medio de transporte más amigable con el medio ambiente disponible. A diferencia de los vehículos motorizados, no emite gases de efecto invernadero, no contamina el aire y su fabricación requiere una fracción de los recursos necesarios para producir un automóvil.</p>
 
-    <ul>
-        <li><strong>Reducción del sedentarismo:</strong> Un paseo cicloturístico de 2-3 horas proporciona la actividad física diaria recomendada por la OMS.</li>
-        <li><strong>Salud cardiovascular:</strong> El ciclismo moderado fortalece el corazón y la circulación.</li>
-        <li><strong>Bienestar mental:</strong> La conexión con el entorno natural y urbano reduce estrés y ansiedad.</li>
-        <li><strong>Interacción social:</strong> El cicloturismo en grupo crea comunidad y conexiones significativas.</li>
-    </ul>
+            <div class="ascitur-highlight-box">
+                <h4>Datos relevantes</h4>
+                <p><strong>Un cicloturista consume 5 veces menos energía que un viajero en transporte motorizado</strong> y genera cero residuos durante su desplazamiento. En ciudades como Valencia, donde la contaminación del aire es una preocupación creciente, el cicloturismo ofrece una solución real.</p>
+            </div>
 
-    <p>Los cicloturistas no son visitantes pasivos; son participantes activos en la experiencia de la ciudad, lo que enriquece tanto su vivencia como la interacción con la comunidad local.</p>
+            <p>Además, fomenta el uso de infraestructuras de bajo impacto: carriles bici, espacios verdes y zonas peatonales. Esto ayuda a las ciudades a reimaginar su espacio público, priorizando la vida urbana sobre el tráfico motorizado.</p>
 
-    <div class="ascitur-quote-box">
-        "Viajar en bicicleta es redescubrir el ritmo natural de la ciudad, los detalles que se pierden en un automóvil y la conexión verdadera con los lugares que visitamos."
-    </div>
+            <h2>2. Salud y Bienestar del Viajero</h2>
+            <p>Viajar en bicicleta no es solo una decisión ambiental, es una decisión de salud. Los cicloturistas realizan actividad física moderada mientras disfrutan de su experiencia, lo que genera múltiples beneficios:</p>
 
-    <h2>3. Economía Accesible y Democratizadora</h2>
-    <p>El cicloturismo democratiza la experiencia de viaje. A diferencia de otros segmentos turísticos, no requiere inversión elevada:</p>
+            <ul>
+                <li><strong>Reducción del sedentarismo:</strong> Un paseo cicloturístico de 2-3 horas proporciona la actividad física diaria recomendada por la OMS.</li>
+                <li><strong>Salud cardiovascular:</strong> El ciclismo moderado fortalece el corazón y la circulación.</li>
+                <li><strong>Bienestar mental:</strong> La conexión con el entorno natural y urbano reduce estrés y ansiedad.</li>
+                <li><strong>Interacción social:</strong> El cicloturismo en grupo crea comunidad y conexiones significativas.</li>
+            </ul>
 
-    <ul>
-        <li>Alquiler de bicicleta con tarifa asequible.</li>
-        <li>Cero gasto en combustible ni peajes.</li>
-        <li>Acceso libre y directo a espacios públicos gratuitos.</li>
-        <li>Flexibilidad total para elegir rutas y ritmos propios.</li>
-    </ul>
+            <p>Los cicloturistas no son visitantes pasivos; son participantes activos en la experiencia de la ciudad, lo que enriquece tanto su vivencia como la interacción con la comunidad local.</p>
 
-    <p>Esta accesibilidad ha permitido que nuevos segmentos de viajeros experimenten Valencia: familias con presupuesto limitado, jóvenes mochileros, jubilados activos y grupos de amigos que buscan alternativas a los circuitos turísticos tradicionales.</p>
+            <div class="ascitur-quote-box">
+                "Viajar en bicicleta es redescubrir el ritmo natural de la ciudad, los detalles que se pierden en un automóvil y la conexión verdadera con los lugares que visitamos."
+            </div>
 
-    <h2>4. Impacto Positivo en Comunidades Locales</h2>
-    <p>Contrario a la creencia de que más turismo masivo es mejor, los cicloturistas generan un modelo mucho más favorable para los residentes:</p>
+            <h2>3. Economía Accesible y Democratizadora</h2>
+            <p>El cicloturismo democratiza la experiencia de viaje. A diferencia de otros segmentos turísticos, no requiere inversión elevada:</p>
 
-    <div class="ascitur-highlight-box">
-        <h4>Beneficios para la comunidad local</h4>
-        <p>Los cicloturistas se distribuyen naturally por toda la ciudad, descubriendo pequeños comercios, bares y negocios locales que no aparecen en las guías convencionales. Apoyan negocios de proximidad, reducen la concentración en puntos saturados y generan un gasto más disperso y equilibrado.</p>
-    </div>
+            <ul>
+                <li>Alquiler de bicicleta con tarifa asequible.</li>
+                <li>Cero gasto en combustible ni peajes.</li>
+                <li>Acceso libre y directo a espacios públicos gratuitos.</li>
+                <li>Flexibilidad total para elegir rutas y ritmos propios.</li>
+            </ul>
 
-    <p>Además, respetan naturalmente los ritmos urbanos: el ciclismo silencioso, sin contaminación acústica, permite una convivencia armónica en barrios residenciales que otros modelos turísticos sobrecargan.</p>
+            <p>Esta accesibilidad ha permitido que nuevos segmentos de viajeros experimenten Valencia: familias con presupuesto limitado, jóvenes mochileros, jubilados activos y grupos de amigos que buscan alternativas a los circuitos turísticos tradicionales.</p>
 
-    <h2>5. Experiencia Inmersiva y Auténtica</h2>
-    <p>La velocidad del ciclismo (15-25 km/h) es la velocidad óptima para experimentar una ciudad: lo suficientemente rápido para cubrir distancias amplias, pero lo suficientemente lento para apreciar detalles, arquitectura y vida cotidiana.</p>
+            <h2>4. Impacto Positivo en Comunidades Locales</h2>
+            <p>Contrario a la creencia de que más turismo masivo es mejor, los cicloturistas generan un modelo mucho más favorable para los residentes:</p>
 
-    <p>Los cicloturistas no visitan Valencia; <strong>la viven</strong>. Respiran el aire del Jardín del Turia, saludan a comerciantes locales, descubren cafés escondidos y se adentran en callejuelas únicas.</p>
+            <div class="ascitur-highlight-box">
+                <h4>Beneficios para la comunidad local</h4>
+                <p>Los cicloturistas se distribuyen naturalmente por toda la ciudad, descubriendo pequeños comercios, bares y negocios locales que no aparecen en las guías convencionales. Apoyan negocios de proximidad, reducen la concentración en puntos saturados y generan un gasto más disperso y equilibrado.</p>
+            </div>
 
-    <h2>6. Herramienta de Resiliencia Urbana</h2>
-    <p>Las ciudades que invierten en cicloturismo construyen infraestructura que beneficia a todos: carriles bici seguros, espacios públicos revitalizados y menor congestión. Valencia lo sabe bien: su red de carriles bici ha transformado la experiencia urbana no solo para turistas, sino para todos sus residentes.</p>
+            <p>Además, respetan naturalmente los ritmos urbanos: el ciclismo silencioso, sin contaminación acústica, permite una convivencia armónica en barrios residenciales que otros modelos turísticos sobrecargan.</p>
 
-    <h2>El Futuro Ya Está Aquí</h2>
-    <p>El cicloturismo no es una tendencia pasajera. Es una reorientación fundamental de cómo concebimos el viaje, el ocio y la relación entre turistas y comunidades locales.</p>
+            <h2>5. Experiencia Inmersiva y Auténtica</h2>
+            <p>La velocidad del ciclismo (15-25 km/h) es la velocidad óptima para experimentar una ciudad: lo suficientemente rápido para cubrir distancias amplias, pero lo suficientemente lento para apreciar detalles, arquitectura y vida cotidiana.</p>
 
-    <p>En ASCITUR, llevamos años trabajando para que Valencia sea un destino cicloturístico de excelencia. Nuestras empresas asociadas no solo alquilan bicicletas; ofrecen experiencias responsables, asesoramiento de calidad y la garantía de que cada pedalada contribuye a una ciudad mejor.</p>
+            <p>Los cicloturistas no visitan Valencia; <strong>la viven</strong>. Respiran el aire del Jardín del Turia, saludan a comerciantes locales, descubren cafés escondidos y se adentran en callejuelas únicas.</p>
 
-    <p><strong>El turismo sostenible ya no es una opción minoritaria; es la dirección hacia la que se mueve el mundo.</strong> Y Valencia, con sus calles, su clima y su comunidad comprometida, lidera este movimiento en el Mediterráneo.</p>
+            <h2>6. Herramienta de Resiliencia Urbana</h2>
+            <p>Las ciudades que invierten en cicloturismo construyen infraestructura que beneficia a todos: carriles bici seguros, espacios públicos revitalizados y menor congestión. Valencia lo sabe bien: su red de carriles bici ha transformado la experiencia urbana no solo para turistas, sino para todos sus residentes.</p>
 
-    <!-- FICHA DEL AUTOR -->
-    <div class="ascitur-author-card">
-        <div class="ascitur-author-avatar">ASC</div>
-        <div class="ascitur-author-details">
-            <h4>Publicado por ASCITUR Valencia</h4>
-            <p>Asociación de Cicloturismo y Turismo Sostenible de Valencia. Promovemos experiencias cicloturísticas profesionales, seguras y responsables.</p>
+            <h2>El Futuro Ya Está Aquí</h2>
+            <p>El cicloturismo no es una tendencia pasajera. Es una reorientación fundamental de cómo concebimos el viaje, el ocio y la relación entre turistas y comunidades locales.</p>
+
+            <p>En ASCITUR, llevamos años trabajando para que Valencia sea un destino cicloturístico de excelencia. Nuestras empresas asociadas no solo alquilan bicicletas; ofrecen experiencias responsables, asesoramiento de calidad y la garantía de que cada pedalada contribuye a una ciudad mejor.</p>
+
+            <p><strong>El turismo sostenible ya no es una opción minoritaria; es la dirección hacia la que se mueve el mundo.</strong> Y Valencia, con sus calles, su clima y su comunidad comprometida, lidera este movimiento en el Mediterráneo.</p>
+
+            <!-- FICHA DEL AUTOR -->
+            <div class="ascitur-author-card">
+                <div class="ascitur-author-avatar">ASC</div>
+                <div class="ascitur-author-details">
+                    <h4>Publicado por ASCITUR Valencia</h4>
+                    <p>Asociación de Cicloturismo y Turismo Sostenible de Valencia. Promovemos experiencias cicloturísticas profesionales, seguras y responsables.</p>
+                </div>
+            </div>
+
+            <!-- SECCIÓN COMENTARIOS -->
+            <div class="ascitur-section-title">Comentarios de la Comunidad</div>
+
+            <div class="ascitur-comment-item">
+                <div class="ascitur-comment-header">
+                    <span>María García</span>
+                    <span class="ascitur-comment-date">25 de julio, 2024</span>
+                </div>
+                <p class="ascitur-comment-body">Excelente artículo. He estado explorando Valencia en bicicleta durante los últimos años y es increíble cómo la ciudad se transforma cuando la ves desde una bici. Conectas con los lugares de forma que no es posible en coche. Felicidades al equipo de ASCITUR por promover este turismo más responsable.</p>
+            </div>
+
+            <div class="ascitur-comment-item">
+                <div class="ascitur-comment-header">
+                    <span>Carlos López</span>
+                    <span class="ascitur-comment-date">26 de julio, 2024</span>
+                </div>
+                <p class="ascitur-comment-body">Estoy completamente de acuerdo con los puntos sobre sostenibilidad y salud. Hace poco hicimos una ruta guiada con una de las empresas asociadas a ASCITUR y fue increíble. Realmente marca una diferencia el hecho de que los guías sean expertos locales que conocen la ciudad a fondo.</p>
+            </div>
+
+            <div class="ascitur-comment-item">
+                <div class="ascitur-comment-header">
+                    <span>Anna Müller</span>
+                    <span class="ascitur-comment-date">27 de julio, 2024</span>
+                </div>
+                <p class="ascitur-comment-body">Como turista de Alemania, puedo confirmar que el cicloturismo debería ser la norma en todas las ciudades. Valencia lo está haciendo bien. Mi recomendación: invertid más en seguridad de carriles bici. Eso sería el toque final.</p>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+
+                <!-- BRAND -->
+                <div class="md:col-span-2">
+                    <a href="../index.html#home" class="flex items-center gap-3">
+                        <img src="../images/Logo-Ascitur.svg" alt="ASCITUR" class="h-16 w-auto">
+                        <span class="text-xl font-black text-white">ASCITUR</span>
+                    </a>
+
+                    <p class="mt-4 text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+                        Asociación de Cicloturismo y Turismo Sostenible de Valencia. Trabajamos por una movilidad respetuosa, eficiente y accesible para todos.
+                    </p>
+
+                    <!-- SOCIAL -->
+                    <div class="flex gap-3 mt-6">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#9A6A00] flex items-center justify-center transition text-white" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINKS -->
+                <div>
+                    <h3 class="text-white font-bold text-sm mb-4">Navegación</h3>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li><a href="../index.html#about" class="hover:text-[#D8A93A] transition">Sobre nosotros</a></li>
+                        <li><a href="../index.html#services" class="hover:text-[#D8A93A] transition">Servicios</a></li>
+                        <li><a href="../index.html#companies" class="hover:text-[#D8A93A] transition">Asociados</a></li>
+                        <li><a href="../index.html#collaboration" class="hover:text-[#D8A93A] transition">Colaboración</a></li>
+                        <li><a href="../index.html#blog" class="hover:text-[#D8A93A] transition">Noticias</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div>
+                    <h3 class="text-white font-bold text-sm mb-4">Contacto</h3>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-[#D8A93A]"></i>
+                            <a href="mailto:contacto@ascitur.es" class="hover:text-[#D8A93A] transition">contacto@ascitur.es</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-[#D8A93A]"></i>
+                            <span>Valencia, España</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-slate-500">
+                <p>© 2026 ASCITUR Valencia. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-300">Aviso legal</a>
+                    <a href="#" class="hover:text-slate-300">Política de privacidad</a>
+                    <a href="#" class="hover:text-slate-300">Cookies</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <!-- SECCIÓN COMENTARIOS -->
-    <div class="ascitur-section-title">Comentarios de la Comunidad</div>
+    <!-- SCRIPTS -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
 
-    <div class="ascitur-comment-item">
-        <div class="ascitur-comment-header">
-            <span>María García</span>
-            <span class="ascitur-comment-date">25 de julio, 2024</span>
-        </div>
-        <p class="ascitur-comment-body">Excelente artículo. He estado explorando Valencia en bicicleta durante los últimos años y es increíble cómo la ciudad se transforma cuando la ves desde una bici. Conectas con los lugares de forma que no es posible en coche. Felicidades al equipo de ASCITUR por promover este turismo más responsable.</p>
-    </div>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
 
-    <div class="ascitur-comment-item">
-        <div class="ascitur-comment-header">
-            <span>Carlos López</span>
-            <span class="ascitur-comment-date">26 de julio, 2024</span>
-        </div>
-        <p class="ascitur-comment-body">Estoy completamente de acuerdo con los puntos sobre sostenibilidad y salud. Hace poco hicimos una ruta guiada con una de las empresas asociadas a ASCITUR y fue increíble. Realmente marca una diferencia el hecho de que los guías sean expertos locales que conocen la ciudad a fondo.</p>
-    </div>
-
-    <div class="ascitur-comment-item">
-        <div class="ascitur-comment-header">
-            <span>Anna Müller</span>
-            <span class="ascitur-comment-date">27 de julio, 2024</span>
-        </div>
-        <p class="ascitur-comment-body">Como turista de Alemania, puedo confirmar que el cicloturismo debería ser la norma en todas las ciudades. Valencia lo está haciendo bien. Mi recomendación: invertid más en seguridad de carriles bici. Eso sería el toque final.</p>
-    </div>
-
-</div> 
+</html>
