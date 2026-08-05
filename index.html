@@ -222,99 +222,110 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-16 md:py-20 bg-white relative overflow-hidden">
-        <div class="glow glow-gold -right-72 top-40"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
- 
+<section id="about" class="py-16 md:py-20 bg-white relative overflow-hidden"> 
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <!-- MAIN GRID: COMPROMISO (LEFT) + VALUES (RIGHT) -->
+        <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+            
             <!-- COMPROMISO CON LA SOSTENIBILIDAD, CONVIVENCIA Y SEGURIDAD -->
-            <div class="mt-16 bg-slate-50 rounded-3xl p-8 border border-slate-200/80 shadow-sm" data-aos="fade-up">
-                <div class="max-w-3xl">
+            <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between" data-aos="fade-right">
+                <div>
                     <span class="text-[#9A6A00] font-bold text-xs uppercase tracking-wider block mb-2">Compromiso ASCITUR</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
                         Compromiso con la Sostenibilidad, la Convivencia y la Seguridad
                     </h3>
-                    <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    <p class="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
                         ASCITUR entiende que la bicicleta es una herramienta clave dentro del modelo de ciudad sostenible, siempre que su uso turístico se desarrolle bajo criterios de responsabilidad, profesionalidad y respeto al entorno urbano.
                     </p>
                 </div>
 
-                <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                <div class="mt-8 grid sm:grid-cols-2 gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="leaf" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
                         <span class="text-xs text-slate-700 font-medium">Reducir el impacto ambiental de los desplazamientos turísticos.</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="bike" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
                         <span class="text-xs text-slate-700 font-medium">Favorecer una movilidad más sostenible y saludable.</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="map" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
-                        <span class="text-xs text-slate-700 font-medium">Descongestionar zonas clave mediante rutas y recomendaciones responsables.</span>
+                        <span class="text-xs text-slate-700 font-medium">Descongestionar zonas clave mediante rutas responsables.</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="info" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
                         <span class="text-xs text-slate-700 font-medium">Mejorar la información que recibe el visitante.</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="users" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
                         <span class="text-xs text-slate-700 font-medium">Reforzar la convivencia armónica entre turistas y residentes.</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
+                    <div class="bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-xs flex items-start gap-3">
                         <i data-lucide="shield-check" class="w-5 h-5 text-[#9A6A00] shrink-0 mt-0.5"></i>
-                        <span class="text-xs text-slate-700 font-medium">Promover el respeto a la normativa municipal y la imagen de Valencia.</span>
+                        <span class="text-xs text-slate-700 font-medium">Promover el respeto a la normativa municipal.</span>
                     </div>
                 </div>
             </div>
 
-            <!-- VALUES -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
+            <!-- VALUES (2x2 GRID ON RIGHT) -->
+            <div class="grid sm:grid-cols-2 gap-6" data-aos="fade-left">
+                <!-- CARD 1 -->
+                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80 min-h-[220px] flex flex-col justify-between">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center shrink-0 shadow-xs">
                         <i data-lucide="leaf" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900">Sostenibilidad</h3>
-                    <p class="mt-2 text-slate-600 text-sm leading-relaxed">
-                        Fomentamos la reducción de la huella de carbono mediante vehículos 100% limpios y rutas de bajo
-                        impacto.
-                    </p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-extrabold text-slate-900">Sostenibilidad</h4>
+                        <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Fomentamos la reducción de la huella de carbono mediante vehículos 100% limpios y rutas de bajo impacto.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
+                <!-- CARD 2 -->
+                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80 min-h-[220px] flex flex-col justify-between">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center shrink-0 shadow-xs">
                         <i data-lucide="users" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900">Colaboración</h3>
-                    <p class="mt-2 text-slate-600 text-sm leading-relaxed">
-                        Generamos alianzas entre comercios locales, instituciones públicas y operadores turísticos
-                        regionales.
-                    </p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-extrabold text-slate-900">Colaboración</h4>
+                        <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Generamos alianzas entre comercios locales, instituciones públicas y operadores turísticos regionales.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
+                <!-- CARD 3 -->
+                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80 min-h-[220px] flex flex-col justify-between">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center shrink-0 shadow-xs">
                         <i data-lucide="shield-check" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900">Seguridad Vial</h3>
-                    <p class="mt-2 text-slate-600 text-sm leading-relaxed">
-                        Promovemos el cumplimiento del código de circulación, el uso del casco y el respeto al peatón.
-                    </p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-extrabold text-slate-900">Seguridad Vial</h4>
+                        <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Promovemos el cumplimiento del código de circulación, el uso del casco y el respeto al peatón.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80">
-                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center mb-4">
+                <!-- CARD 4 -->
+                <div class="card rounded-2xl bg-slate-50 p-6 border border-slate-200/80 min-h-[220px] flex flex-col justify-between">
+                    <div class="w-12 h-12 rounded-xl bg-[#F4E7C1] text-[#7B5600] flex items-center justify-center shrink-0 shadow-xs">
                         <i data-lucide="badge-check" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900">Calidad Certificada</h3>
-                    <p class="mt-2 text-slate-600 text-sm leading-relaxed">
-                        Mantenimiento riguroso de flotas de bicicletas urbanas, eléctricas, trekking y accesorios
-                        infantiles.
-                    </p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-extrabold text-slate-900">Calidad Certificada</h4>
+                        <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Mantenimiento riguroso de flotas de bicicletas urbanas, eléctricas, trekking y accesorios infantiles.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+        </div> 
+    </div> 
+</section>
 
     <!-- SERVICES SECTION -->
     <section id="services" class="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
